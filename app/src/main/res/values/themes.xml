@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.TestTask" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:fontFamily">@font/nunito_sans</item>
+        <item name="fontFamily">@font/nunito_sans</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen.IconBackground">
+        <item name="windowSplashScreenBackground">@color/yellow</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/yellow</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="CustomTextInputLayoutFilledBoxDense" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundMode">filled</item>
+        <item name="cursorColor">?attr/colorOnSecondary</item>
+        <item name="android:background">@drawable/input_background</item>
+        <item name="boxStrokeColor">?attr/colorSecondary</item>
+        <item name="hintTextColor">?attr/colorSecondary</item>
+        <item name="hintTextAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+
+    <style name="CustomTextInputLayoutFilledBoxDenseWithButton" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundMode">filled</item>
+        <item name="cursorColor">?attr/colorOnSecondary</item>
+        <item name="boxStrokeColor">?attr/colorSecondary</item>
+        <item name="hintTextColor">?attr/colorSecondary</item>
+        <item name="hintTextAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+
+    <style name="CustomTextInputLayoutFilledBoxError" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="cursorColor">@color/red</item>
+        <item name="android:background">@drawable/input_background_error</item>
+        <item name="boxStrokeColor">@color/input_box_stroke_color</item>
+        <item name="hintTextColor">@color/input_box_stroke_color</item>
+        <item name="android:textColorHint">@color/red</item>
+        <item name="hintTextAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+
+    <style name="CustomTextInputLayoutFilledBoxErrorWithButton" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="cursorColor">@color/red</item>
+        <item name="boxStrokeColor">@color/input_box_stroke_color</item>
+        <item name="hintTextColor">@color/input_box_stroke_color</item>
+        <item name="android:textColorHint">@color/red</item>
+        <item name="hintTextAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+
+</resources>

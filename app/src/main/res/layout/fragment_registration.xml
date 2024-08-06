@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.registration.RegistrationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="36dp"
+            android:paddingBottom="36dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameInputLayout"
+                style="@style/CustomTextInputLayoutFilledBoxDense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_name"
+                app:boxBackgroundColor="?attr/colorPrimaryVariant"
+                app:boxBackgroundMode="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:inputType="text"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/nameHelper"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text=""
+                android:textColor="#99000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameInputLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailInputLayout"
+                style="@style/CustomTextInputLayoutFilledBoxDense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:hint="@string/email"
+                app:boxBackgroundColor="?attr/colorPrimaryVariant"
+                app:boxBackgroundMode="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameHelper">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/emailHelper"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text=""
+                android:textColor="#99000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailInputLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneInputLayout"
+                style="@style/CustomTextInputLayoutFilledBoxDense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:hint="@string/phone"
+                app:boxBackgroundColor="?attr/colorPrimaryVariant"
+                app:boxBackgroundMode="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailHelper">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:inputType="phone"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/phoneHelper"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="@string/_38_xxx_xxx_xx_xx"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneInputLayout" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/select_your_position"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneHelper" />
+
+            <RadioGroup
+                android:id="@+id/positionsGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/photoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:orientation="horizontal"
+                android:background="@drawable/input_background_normal"
+                app:layout_constraintTop_toBottomOf="@+id/positionsGroup">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/photoInputLayout"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/upload_your_photo"
+                    style="@style/CustomTextInputLayoutFilledBoxDenseWithButton"
+                    app:boxBackgroundColor="?attr/colorPrimaryVariant"
+                    app:boxBackgroundMode="none">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/photoInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:inputType="text"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/uploadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/secondary_button_background"
+                    android:text="@string/upload"
+                    android:layout_gravity="center|end"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="?attr/colorSecondary"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/photoHelper"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text=""
+                android:textColor="#99000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photoLayout" />
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/disabled_primary_button"
+                android:textColor="@color/grey"
+                android:gravity="center"
+                android:text="@string/title_registration"
+                android:textAppearance="@style/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photoHelper" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <include android:id="@+id/successView" layout="@layout/successfully_registered_view"
+        android:visibility="invisible"/>
+    <include android:id="@+id/errorView" layout="@layout/error_registration_view"
+        android:visibility="invisible"/>
+    <include android:id="@+id/errorConnectionView" layout="@layout/error_connection_view"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

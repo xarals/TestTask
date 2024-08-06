@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TestTask</string>
+    <string name="title_users">Users</string>
+    <string name="title_registration">Sign up</string>
+    <string name="GET">Working with GET request</string>
+    <string name="POST">Working with POST request</string>
+    <string name="there_is_no_internet_connection">There is no internet connection</string>
+    <string name="try_again">Try again</string>
+    <string name="there_are_no_users_yet">There are no users yet</string>
+    <string name="your_name">Your name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="select_your_position">Select your position</string>
+    <string name="upload">Upload</string>
+    <string name="upload_your_photo">Upload your photo</string>
+    <string name="required_field">Required field</string>
+    <string name="the_name_must_be_at_least_2_characters">The name must be at least 2 characters.</string>
+    <string name="the_email_must_be_a_valid_email_address">The email must be a valid email address.</string>
+    <string name="_38_xxx_xxx_xx_xx">+38 (XXX) XXX-XX-XX</string>
+    <string name="the_phone_must_be_a_valid_phone_number">The phone must be a valid phone number</string>
+    <string name="the_name_must_be_no_more_than_60_characters">The name must be no more than 60 characters</string>
+    <string name="validation_failed">Validation failed</string>
+    <string name="error">Error</string>
+    <string name="size_must_not_exceed_5mb">Size must not exceed 5MB</string>
+    <string name="photo_should_be_with_resolution_at_least_70x70px">Photo should be with resolution at least 70x70px</string>
+    <string name="user_successfully_registered">User successfully registered</string>
+</resources>
